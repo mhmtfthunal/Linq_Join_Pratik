@@ -23,26 +23,6 @@ Linq_Join_Pratik/
 
 ---
 
-## 📄 Kod Parçası
-
-```csharp
-var query = from book in books
-            join author in authors
-            on book.AuthorId equals author.AuthorId
-            select new
-            {
-                BookTitle = book.Title,
-                AuthorName = author.Name
-            };
-
-foreach (var item in query)
-{
-    Console.WriteLine($"Kitap: {item.BookTitle} - Yazar: {item.AuthorName}");
-}
-```
-
----
-
 ## ✅ Örnek Çıktı
 
 ```
